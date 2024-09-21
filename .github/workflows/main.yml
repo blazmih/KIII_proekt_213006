@@ -54,7 +54,8 @@ jobs:
 
     # Step 9: Build Docker image
     - name: Build Docker Image
-      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/KIII_proekt_213006:latest .
+      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/kiii_proekt_213006:latest .
+
 
     # Step 10: Login to DockerHub
     - name: Login to DockerHub
@@ -65,4 +66,4 @@ jobs:
 
     # Step 11: Push Docker image to DockerHub
     - name: Push Docker Image
-      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/KIII_proekt_213006:latest
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/kiii_proekt_213006:latest
