@@ -3,7 +3,7 @@ name: Build, Test, Code Scan, and Deploy
 on:
   push:
     branches:
-      - main  # You can change this to your deployment branch
+      - master  # You can change this to your deployment branch
 
 jobs:
   build:
